@@ -1,0 +1,94 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { siteConfig } from "@/data/site";
+
+const languages = ["TypeScript", "Python", "Go", "Rust", "C#", "SQL"];
+
+export function HeroSection() {
+  return (
+    <section className="relative overflow-hidden py-24">
+      <div className="container-grid grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+        <div className="space-y-8">
+          <motion.span
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-1 text-xs uppercase tracking-[0.2em] text-white/70"
+          >
+            Full-stack инженер · Tech Lead · Ментор
+          </motion.span>
+          <motion.h1
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-4xl font-bold tracking-tight sm:text-5xl"
+          >
+            Создаю цифровые продукты, которые масштабируются и вдохновляют.
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="text-lg text-white/70"
+          >
+            Более 10 лет опыта в разработке высоконагруженных систем, построении инженерных команд
+            и внедрении современных практик доставки продукта.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="flex flex-wrap gap-4"
+          >
+            <Link
+              href="#projects"
+              className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-900 shadow-lg shadow-cyan-500/30"
+            >
+              Смотреть проекты
+            </Link>
+            <a
+              href="/resume"
+              className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold"
+            >
+              Резюме
+            </a>
+            <a href={`mailto:${siteConfig.email}`} className="text-sm font-semibold text-accent">
+              Связаться
+            </a>
+          </motion.div>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.5 }}
+          className="relative"
+        >
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/20 p-8">
+            <div className="space-y-4 text-sm">
+              <p className="text-white/70">Языки и технологии</p>
+              <div className="grid grid-cols-2 gap-3">
+                {languages.map((lang) => (
+                  <div
+                    key={lang}
+                    className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center font-semibold"
+                  >
+                    {lang}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+      <motion.div
+        aria-hidden
+        className="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+      />
+    </section>
+  );
+}
