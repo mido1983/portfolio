@@ -1,23 +1,50 @@
 import { experiences, skills } from "@/data/experience";
 import { ResumeActions } from "@/components/resume-actions";
 
+import { siteConfig } from "@/data/site";
+
 const education = [
   {
-    title: "МГУ им. М.В. Ломоносова",
-    degree: "Прикладная математика и информатика",
-    period: "2009 — 2014"
+    title: "Next.js & Python Professional Courses",
+    degree: "Advanced certificates",
+    period: "2024"
+  },
+  {
+    title: "ReactJS Web Development",
+    degree: "Professional course",
+    period: "2020"
+  },
+  {
+    title: "Full Stack Developer Course (John Bryce)",
+    degree: "Diploma program",
+    period: "2016"
+  },
+  {
+    title: "BA Studies, Tel Aviv University",
+    degree: "Undergraduate program",
+    period: "2007"
   }
 ];
+
+const spokenLanguages = [
+  { name: "Hebrew", level: "Fluent" },
+  { name: "English", level: "Professional working proficiency (B2)" },
+  { name: "Russian", level: "Native" }
+];
+
 
 export default function ResumePage() {
   return (
     <div className="container-grid py-24 print:py-12">
       <header className="space-y-6">
-        <p className="text-sm uppercase tracking-[0.25em] text-accent">Резюме</p>
-        <h1 className="text-4xl font-semibold">Иван Петров</h1>
+
+        <p className="text-sm uppercase tracking-[0.25em] text-accent">Résumé</p>
+        <h1 className="text-4xl font-semibold">Michael Doroshenko</h1>
         <p className="max-w-2xl text-white/70">
-          Senior Full-Stack Engineer с опытом построения продуктовых команд, развития архитектуры и вывода сложных
-          решений в production.
+          Full stack web developer with 7+ years of experience delivering practical web solutions for business and
+          e-commerce. Skilled in React, Next.js, Node.js, PHP, WordPress, and modern databases, with a passion for
+          performance, scalable systems, and automation.
+
         </p>
         <ResumeActions />
       </header>
@@ -25,7 +52,9 @@ export default function ResumePage() {
       <section className="mt-12 grid gap-8 lg:grid-cols-[1fr_320px] print:grid-cols-1">
         <div className="space-y-8">
           <div>
-            <h2 className="text-2xl font-semibold">Опыт</h2>
+
+            <h2 className="text-2xl font-semibold">Experience</h2>
+
             <div className="mt-6 space-y-6">
               {experiences.map((item) => (
                 <div
@@ -49,8 +78,9 @@ export default function ResumePage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold">Образование</h2>
-            <div className="mt-4 space-y-4">
+
+            <h2 className="text-2xl font-semibold">Education</h2>
+
               {education.map((item) => (
                 <div
                   key={item.title}
@@ -66,31 +96,52 @@ export default function ResumePage() {
         </div>
         <aside className="space-y-8">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 print:border-none print:bg-transparent">
-            <h3 className="text-lg font-semibold">Навыки</h3>
+
+            <h3 className="text-lg font-semibold">Skills</h3>
             <div className="mt-4 space-y-3 text-sm text-white/80">
               <div>
-                <p className="font-semibold text-white">Языки</p>
-                <p>{skills.languages.join(", ")}</p>
+                <p className="font-semibold text-white">Frontend</p>
+                <p>{skills.frontend.join(", ")}</p>
               </div>
               <div>
-                <p className="font-semibold text-white">Фреймворки</p>
-                <p>{skills.frameworks.join(", ")}</p>
+                <p className="font-semibold text-white">Backend</p>
+                <p>{skills.backend.join(", ")}</p>
               </div>
               <div>
-                <p className="font-semibold text-white">Инструменты</p>
-                <p>{skills.tooling.join(", ")}</p>
+                <p className="font-semibold text-white">Databases</p>
+                <p>{skills.databases.join(", ")}</p>
               </div>
               <div>
-                <p className="font-semibold text-white">Soft Skills</p>
-                <p>{skills.soft.join(", ")}</p>
+                <p className="font-semibold text-white">DevOps & Process</p>
+                <p>{skills.devops.join(", ")}</p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">Specialties & AI Tools</p>
+                <p>{skills.specialties.join(", ")}</p>
+
               </div>
             </div>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70 print:border-none print:bg-transparent">
-            <h3 className="text-lg font-semibold text-white">Контакты</h3>
-            <p className="mt-3">Email: hello@ivanpetrov.dev</p>
-            <p>GitHub: github.com/ivanpetrov</p>
-            <p>LinkedIn: linkedin.com/in/ivanpetrov</p>
+
+            <h3 className="text-lg font-semibold text-white">Contact</h3>
+            <p className="mt-3">Email: {siteConfig.email}</p>
+            <p>Phone: {siteConfig.phone}</p>
+            <p>Location: {siteConfig.location}</p>
+            <p>
+              LinkedIn: <a href={siteConfig.socials.linkedin}>{siteConfig.socials.linkedin}</a>
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70 print:border-none print:bg-transparent">
+            <h3 className="text-lg font-semibold text-white">Languages</h3>
+            <ul className="mt-3 space-y-2">
+              {spokenLanguages.map((language) => (
+                <li key={language.name}>
+                  <span className="font-semibold text-white">{language.name}</span>: {language.level}
+                </li>
+              ))}
+            </ul>
+
           </div>
         </aside>
       </section>

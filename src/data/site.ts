@@ -1,13 +1,15 @@
 export const siteConfig = {
-  name: "Иван Петров — Senior Full-Stack Engineer",
-  url: "https://ivanpetrov.dev",
+
+  name: "Michael Doroshenko — Full Stack Web Developer",
+  url: "https://linkedin.com/in/michael-doroshenko",
   description:
-    "Портфолио разработчика с упором на современные веб-технологии, сложные интерфейсы и инженерные практики.",
-  email: "hello@ivanpetrov.dev",
+    "Portfolio for Michael Doroshenko, a full stack engineer specializing in React, Next.js, Node.js, PHP, WordPress, and AI-assisted workflows.",
+  email: "m0504471533@gmail.com",
+  phone: "+972-50-4471533",
+  location: "Haifa / Tel Aviv, Israel",
   socials: {
-    github: "https://github.com/ivanpetrov",
-    linkedin: "https://linkedin.com/in/ivanpetrov",
-    telegram: "https://t.me/ivanpetrov"
+    linkedin: "https://linkedin.com/in/michael-doroshenko"
+
   }
 };
 

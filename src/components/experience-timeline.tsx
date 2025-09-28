@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 export function ExperienceTimeline() {
   return (
     <section className="container-grid py-24">
-      <h2 className="text-3xl font-semibold">Опыт</h2>
+
+      <h2 className="text-3xl font-semibold">Experience</h2>
+
       <div className="mt-10 space-y-10 border-l border-white/10 pl-6">
         {experiences.map((item, index) => (
           <motion.article

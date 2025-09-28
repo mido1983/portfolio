@@ -1,5 +1,9 @@
 "use client";
 
+
+import { siteConfig } from "@/data/site";
+
+
 export function ResumeActions() {
   function handlePrint() {
     window.print();
@@ -12,13 +16,15 @@ export function ResumeActions() {
         onClick={handlePrint}
         className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-900"
       >
-        Скачать PDF
+
+        Save as PDF
       </button>
       <a
-        href="mailto:hello@ivanpetrov.dev"
+        href={`mailto:${siteConfig.email}`}
         className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold"
       >
-        Связаться по резюме
+        Discuss opportunities
+
       </a>
     </div>
   );

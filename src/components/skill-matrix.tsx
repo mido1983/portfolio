@@ -4,10 +4,13 @@ import { skills } from "@/data/experience";
 import { motion } from "framer-motion";
 
 const skillGroups = [
-  { title: "Языки", key: "languages" as const },
-  { title: "Фреймворки", key: "frameworks" as const },
-  { title: "Инструменты", key: "tooling" as const },
-  { title: "Soft Skills", key: "soft" as const }
+
+  { title: "Frontend", key: "frontend" as const },
+  { title: "Backend", key: "backend" as const },
+  { title: "Databases", key: "databases" as const },
+  { title: "DevOps & Process", key: "devops" as const },
+  { title: "Specialties & AI Tools", key: "specialties" as const }
+
 ];
 
 export function SkillMatrix() {
@@ -15,10 +18,12 @@ export function SkillMatrix() {
     <section className="container-grid py-24">
       <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold">Навыки</h2>
+
+          <h2 className="text-3xl font-semibold">Skills snapshot</h2>
           <p className="text-white/70">
-            Фокус на инженерии фронтенда и платформенных решений с сильным бекграундом в автоматизации и
-            обработке данных.
+            A balanced toolkit spanning modern frontend frameworks, backend services, databases, DevOps practices, and
+            AI-assisted productivity.
+
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2">

@@ -5,9 +5,11 @@ export default function ProjectsPage() {
   return (
     <div className="container-grid py-24">
       <div className="max-w-2xl space-y-4">
-        <h1 className="text-4xl font-semibold">Проекты</h1>
+        <h1 className="text-4xl font-semibold">Projects</h1>
         <p className="text-white/70">
-          Каждая работа — это сочетание инженерного мышления, взаимодействия с бизнесом и внимания к деталям UX.
+          Every engagement blends engineering rigor with business context to ship resilient experiences that drive
+          measurable outcomes.
+
         </p>
       </div>
       <div className="mt-12 grid gap-8">
@@ -20,7 +22,9 @@ export default function ProjectsPage() {
             <h2 className="mt-4 text-2xl font-semibold">{project.title}</h2>
             <p className="mt-3 text-white/70">{project.summary}</p>
             <div className="mt-6 flex flex-wrap items-center gap-4 text-sm font-semibold text-accent">
-              <Link href={`/projects/${project.slug}`}>Кейс →</Link>
+
+              <Link href={`/projects/${project.slug}`}>Case study →</Link>
+
               {project.links.repo ? (
                 <a href={project.links.repo} target="_blank" rel="noreferrer">
                   GitHub
@@ -28,7 +32,9 @@ export default function ProjectsPage() {
               ) : null}
               {project.links.demo ? (
                 <a href={project.links.demo} target="_blank" rel="noreferrer">
-                  Демо
+
+                  Live demo
+
                 </a>
               ) : null}
             </div>

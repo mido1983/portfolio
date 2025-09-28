@@ -5,10 +5,12 @@ import { siteConfig } from "@/data/site";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { href: "/", label: "Главная" },
-  { href: "/projects", label: "Проекты" },
-  { href: "/resume", label: "Резюме" },
-  { href: "#contact", label: "Контакты" }
+
+  { href: "/", label: "Home" },
+  { href: "/projects", label: "Projects" },
+  { href: "/resume", label: "Résumé" },
+  { href: "#contact", label: "Contact" }
+
 ];
 
 export function Navbar() {
@@ -34,10 +36,12 @@ export function Navbar() {
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
-          href="mailto:hello@ivanpetrov.dev"
+
+          href={`mailto:${siteConfig.email}`}
           className="rounded-full border border-accent px-4 py-2 text-sm font-semibold text-accent"
         >
-          Написать
+          Email me
+
         </motion.a>
       </div>
     </header>

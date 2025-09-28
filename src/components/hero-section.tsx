@@ -4,7 +4,16 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
-const languages = ["TypeScript", "Python", "Go", "Rust", "C#", "SQL"];
+
+const highlights = [
+  "React",
+  "Next.js",
+  "Node.js",
+  "PHP",
+  "WordPress",
+  "AI tools"
+];
+
 
 export function HeroSection() {
   return (
@@ -17,7 +26,9 @@ export function HeroSection() {
             transition={{ delay: 0.1 }}
             className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-1 text-xs uppercase tracking-[0.2em] text-white/70"
           >
-            Full-stack инженер · Tech Lead · Ментор
+
+            Full Stack Web Developer · React · Node.js
+
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
@@ -25,7 +36,9 @@ export function HeroSection() {
             transition={{ delay: 0.2 }}
             className="text-4xl font-bold tracking-tight sm:text-5xl"
           >
-            Создаю цифровые продукты, которые масштабируются и вдохновляют.
+
+            Building practical web platforms that move businesses forward.
+
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -33,8 +46,10 @@ export function HeroSection() {
             transition={{ delay: 0.3 }}
             className="text-lg text-white/70"
           >
-            Более 10 лет опыта в разработке высоконагруженных систем, построении инженерных команд
-            и внедрении современных практик доставки продукта.
+
+            Michael Doroshenko is a full stack developer with 7+ years of experience across React, Next.js, Node.js, PHP,
+            and WordPress, delivering secure, performant solutions for e-commerce and marketing teams.
+
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -46,16 +61,20 @@ export function HeroSection() {
               href="#projects"
               className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-900 shadow-lg shadow-cyan-500/30"
             >
-              Смотреть проекты
+
+              View projects
+
             </Link>
             <a
               href="/resume"
               className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold"
             >
-              Резюме
+
+              Resume
             </a>
             <a href={`mailto:${siteConfig.email}`} className="text-sm font-semibold text-accent">
-              Связаться
+              Contact me
+
             </a>
           </motion.div>
         </div>
@@ -67,14 +86,16 @@ export function HeroSection() {
         >
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/20 p-8">
             <div className="space-y-4 text-sm">
-              <p className="text-white/70">Языки и технологии</p>
+
+              <p className="text-white/70">Core focus areas</p>
               <div className="grid grid-cols-2 gap-3">
-                {languages.map((lang) => (
+                {highlights.map((item) => (
                   <div
-                    key={lang}
+                    key={item}
                     className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center font-semibold"
                   >
-                    {lang}
+                    {item}
+
                   </div>
                 ))}
               </div>

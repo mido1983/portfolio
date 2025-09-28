@@ -28,15 +28,19 @@ export function ContactForm() {
     <section id="contact" className="container-grid py-24">
       <div className="grid gap-12 lg:grid-cols-2">
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold">Свяжемся?</h2>
+
+          <h2 className="text-3xl font-semibold">Let's build something great</h2>
           <p className="text-white/70">
-            Опишите идею проекта или запрос на консультацию — вернусь с ответом в течение рабочего дня.
+            Share a project idea, partnership opportunity, or consultation request and I will respond within one business day.
+
           </p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8">
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="space-y-1 text-sm">
-              <span>Имя</span>
+
+              <span>Name</span>
+
               <input
                 required
                 name="name"
@@ -54,7 +58,9 @@ export function ContactForm() {
             </label>
           </div>
           <label className="space-y-1 text-sm">
-            <span>Сообщение</span>
+
+            <span>Message</span>
+
             <textarea
               required
               name="message"
@@ -67,13 +73,15 @@ export function ContactForm() {
             disabled={status === "loading"}
             className="w-full rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-900 disabled:opacity-60"
           >
-            {status === "loading" ? "Отправка..." : "Отправить"}
+
+            {status === "loading" ? "Sending..." : "Send message"}
           </button>
           {status === "success" ? (
-            <p className="text-sm text-emerald-400">Сообщение отправлено! Скоро свяжусь с вами.</p>
+            <p className="text-sm text-emerald-400">Message delivered! I will get back to you shortly.</p>
           ) : null}
           {status === "error" ? (
-            <p className="text-sm text-red-400">Что-то пошло не так. Попробуйте позже.</p>
+            <p className="text-sm text-red-400">Something went wrong. Please try again later.</p>
+
           ) : null}
         </form>
       </div>

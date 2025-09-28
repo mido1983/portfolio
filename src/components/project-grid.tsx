@@ -9,13 +9,15 @@ export function ProjectGrid() {
     <section id="projects" className="container-grid space-y-10 py-24">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-3xl font-semibold">Проекты</h2>
+
+          <h2 className="text-3xl font-semibold">Projects</h2>
           <p className="mt-2 max-w-2xl text-white/70">
-            Подборка ключевых кейсов, демонстрирующих экспертизу в архитектуре, визуализации данных и DevOps.
+            Selected case studies that highlight end-to-end product delivery, API craftsmanship, and measurable results.
           </p>
         </div>
         <Link href="/projects" className="hidden text-sm font-semibold text-accent md:inline-flex">
-          Все проекты →
+          All projects →
+
         </Link>
       </div>
       <div className="grid gap-6 sm:grid-cols-2">
@@ -42,7 +44,9 @@ export function ProjectGrid() {
             <p className="mt-2 flex-1 text-sm text-white/70">{project.summary}</p>
             <div className="mt-6 flex items-center justify-between">
               <Link href={`/projects/${project.slug}`} className="text-sm font-semibold text-accent">
-                Подробнее →
+
+                Case study →
+
               </Link>
               <div className="flex gap-3 text-xs text-white/50">
                 {project.links.repo ? <a href={project.links.repo}>GitHub</a> : null}

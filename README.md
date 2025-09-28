@@ -1,8 +1,10 @@
 # Portfolio (Next.js)
 
-Персональный сайт-портфолио Senior Full-Stack инженера на Next.js 14 с Tailwind CSS и анимациями Framer Motion.
 
-## Скрипты
+Personal portfolio site for Michael Doroshenko, Full Stack Web Developer. Built with Next.js 14, the App Router, TypeScript, Tailwind CSS, and Framer Motion animations.
+
+## Scripts
+
 
 ```bash
 npm install
@@ -12,16 +14,17 @@ npm run start
 npm run lint
 ```
 
-## Структура
+## Structure
 
-- `src/app` — маршруты (app router), API эндпоинт формы обратной связи.
-- `src/components` — переиспользуемые UI-компоненты (hero, проекты, навыки, контактная форма и др.).
-- `src/data` — контент в виде TypeScript-объектов.
+- `src/app` – routes (App Router) and the contact form API endpoint.
+- `src/components` – reusable UI (hero, projects, skills, contact form, etc.).
+- `src/data` – typed content objects for projects, experience, and site configuration.
 
-## Форма контакта
+## Contact form
 
-POST-запросы на `/api/contact` проходят валидацию и могут быть интегрированы с внешним почтовым сервисом.
+POST requests to `/api/contact` are validated and can be connected to an email service in production.
 
-## Резюме
+## Résumé
 
-Раздел `/resume` адаптирован для печати/экспорта в PDF через стандартный диалог браузера.
+The `/resume` section is optimized for printing/exporting to PDF using the browser print dialog.
+

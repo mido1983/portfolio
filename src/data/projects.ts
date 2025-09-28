@@ -13,46 +13,50 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "fintech-analytics",
-    title: "Fintech Analytics Platform",
+
+    slug: "codere-landing-engine",
+    title: "Codere Landing Automation Engine",
     summary:
-      "Многоуровневая платформа, агрегирующая банковские данные в реальном времени и предоставляющая визуализацию рисков.",
+      "Marketing landing page generator that empowers growth teams to launch localized campaigns 30% faster.",
     year: 2024,
-    tags: ["Next.js", "TypeScript", "Kafka", "D3.js"],
-    links: {
-      demo: "https://fintech.example.com",
-      repo: "https://github.com/ivanpetrov/fintech-analytics"
-    },
+    tags: ["React", "Next.js", "Node.js", "MySQL"],
+    links: {},
     content:
-      "Разработал архитектуру микросервисов, построил пайплайн данных на Kafka и реализовал дашборды с интерактивной аналитикой."
+      "Architected a modular generator that assembles reusable React components, orchestrates data flows through Node.js services, and persists variations in MySQL. Added role-based workflows, live preview tooling, and performance monitoring to keep response times under 200 ms."
   },
   {
-    slug: "ml-ops-platform",
-    title: "ML Ops Control Center",
+    slug: "codere-integration-suite",
+    title: "Codere API Integration Suite",
     summary:
-      "Платформа управления жизненным циклом ML-моделей с автодеплоем, мониторингом и A/B экспериментами.",
+      "Unified REST API layer that synchronizes marketing, analytics, and operations data across business units.",
     year: 2023,
-    tags: ["React", "GraphQL", "Python", "Kubernetes"],
-    links: {
-      demo: "https://mlops.example.com",
-      repo: "https://github.com/ivanpetrov/ml-ops-platform"
-    },
+    tags: ["Node.js", "REST APIs", "TypeScript", "Monitoring"],
+    links: {},
     content:
-      "Вёл команду из 6 инженеров, внедрил безопасные пайплайны деплоя и наблюдаемость с оповещениями по SLA."
+      "Consolidated fragmented services into a documented REST interface with automated validation, testing, and observability hooks. Leveraged AI-assisted code generation to accelerate implementation and established dashboards that highlight contract health and SLA adherence."
   },
   {
-    slug: "design-system",
-    title: "Корпоративный дизайн-систем",
+    slug: "primis-monetization-dashboard",
+    title: "Primis Monetization Dashboard Refresh",
     summary:
-      "Единая дизайн-система с поддержкой темизации, live-документацией и библиотекой компонентов.",
-    year: 2022,
-    tags: ["Storybook", "TypeScript", "Styled Components", "Accessibility"],
-    links: {
-      demo: "https://design.example.com",
-      repo: "https://github.com/ivanpetrov/design-system"
-    },
+      "Rebuilt partner-facing dashboards to improve usability, stability, and monetization insights for media publishers.",
+    year: 2021,
+    tags: ["PHP", "AngularJS", "JavaScript", "MySQL"],
+    links: {},
     content:
-      "Создал 40+ компонентов, внедрил автоматическую проверку доступности и унифицированные гайды по использованию."
+      "Refined AngularJS modules, modernized PHP backend endpoints, and optimized MySQL queries to keep latency low under heavy usage. Rolled out UX enhancements validated with client feedback that increased engagement metrics and reduced support requests."
+  },
+  {
+    slug: "init-commerce-launchpad",
+    title: "Init Commerce Launchpad",
+    summary:
+      "Suite of custom WordPress and WooCommerce builds tailored for e-commerce marketing campaigns.",
+    year: 2020,
+    tags: ["WordPress", "WooCommerce", "PHP", "SEO"],
+    links: {},
+    content:
+      "Delivered pixel-perfect storefronts with bespoke themes, automated product feeds, and third-party service integrations. Embedded SEO best practices, responsive layouts, and performance optimizations that lifted organic traffic and conversion rates."
+
   }
 ];
 
