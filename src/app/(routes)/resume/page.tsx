@@ -1,5 +1,6 @@
 import { experiences, skills } from "@/data/experience";
 import { ResumeActions } from "@/components/resume-actions";
+
 import { siteConfig } from "@/data/site";
 
 const education = [
@@ -31,16 +32,19 @@ const spokenLanguages = [
   { name: "Russian", level: "Native" }
 ];
 
+
 export default function ResumePage() {
   return (
     <div className="container-grid py-24 print:py-12">
       <header className="space-y-6">
+
         <p className="text-sm uppercase tracking-[0.25em] text-accent">Résumé</p>
         <h1 className="text-4xl font-semibold">Michael Doroshenko</h1>
         <p className="max-w-2xl text-white/70">
           Full stack web developer with 7+ years of experience delivering practical web solutions for business and
           e-commerce. Skilled in React, Next.js, Node.js, PHP, WordPress, and modern databases, with a passion for
           performance, scalable systems, and automation.
+
         </p>
         <ResumeActions />
       </header>
@@ -48,7 +52,9 @@ export default function ResumePage() {
       <section className="mt-12 grid gap-8 lg:grid-cols-[1fr_320px] print:grid-cols-1">
         <div className="space-y-8">
           <div>
+
             <h2 className="text-2xl font-semibold">Experience</h2>
+
             <div className="mt-6 space-y-6">
               {experiences.map((item) => (
                 <div
@@ -72,8 +78,9 @@ export default function ResumePage() {
           </div>
 
           <div>
+
             <h2 className="text-2xl font-semibold">Education</h2>
-            <div className="mt-4 space-y-4">
+
               {education.map((item) => (
                 <div
                   key={item.title}
@@ -89,6 +96,7 @@ export default function ResumePage() {
         </div>
         <aside className="space-y-8">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 print:border-none print:bg-transparent">
+
             <h3 className="text-lg font-semibold">Skills</h3>
             <div className="mt-4 space-y-3 text-sm text-white/80">
               <div>
@@ -110,10 +118,12 @@ export default function ResumePage() {
               <div>
                 <p className="font-semibold text-white">Specialties & AI Tools</p>
                 <p>{skills.specialties.join(", ")}</p>
+
               </div>
             </div>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70 print:border-none print:bg-transparent">
+
             <h3 className="text-lg font-semibold text-white">Contact</h3>
             <p className="mt-3">Email: {siteConfig.email}</p>
             <p>Phone: {siteConfig.phone}</p>
@@ -131,6 +141,7 @@ export default function ResumePage() {
                 </li>
               ))}
             </ul>
+
           </div>
         </aside>
       </section>

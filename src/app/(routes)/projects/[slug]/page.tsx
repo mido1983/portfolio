@@ -2,12 +2,15 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProjectBySlug, projects } from "@/data/projects";
 
+
 interface ProjectPageProps {
   params: { slug: string };
 }
 
 export function generateStaticParams() {
+
   return projects.map((project) => ({ slug: project.slug }));
+
 }
 
 export default function ProjectPage({ params }: ProjectPageProps) {
@@ -34,17 +37,23 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           ))}
         </div>
         <div className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8 text-white/80">
+
           <h2 className="text-xl font-semibold">Impact</h2>
+
           <p>{project.content}</p>
           <div className="flex gap-4 text-sm font-semibold text-accent">
             {project.links.repo ? (
               <a href={project.links.repo} target="_blank" rel="noreferrer">
+
                 Repository
+
               </a>
             ) : null}
             {project.links.demo ? (
               <a href={project.links.demo} target="_blank" rel="noreferrer">
+
                 Live demo
+
               </a>
             ) : null}
           </div>

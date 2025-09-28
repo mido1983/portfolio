@@ -9,6 +9,7 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+
     company: "Codere",
     role: "Senior Full Stack Developer",
     period: "Mar 2022 – Present",
@@ -60,10 +61,12 @@ export const experiences: Experience[] = [
       "Built an internal lead management system to centralize campaign insights."
     ],
     tech: ["PHP", "MySQL", "REST APIs", "JavaScript", "SEO"]
+
   }
 ];
 
 export const skills = {
+
   frontend: [
     "React",
     "Next.js",
@@ -94,4 +97,5 @@ export const skills = {
     "ChatGPT",
     "Workflow automation"
   ]
+
 };

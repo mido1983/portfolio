@@ -1,4 +1,5 @@
 export const siteConfig = {
+
   name: "Michael Doroshenko — Full Stack Web Developer",
   url: "https://linkedin.com/in/michael-doroshenko",
   description:
@@ -8,6 +9,7 @@ export const siteConfig = {
   location: "Haifa / Tel Aviv, Israel",
   socials: {
     linkedin: "https://linkedin.com/in/michael-doroshenko"
+
   }
 };
 

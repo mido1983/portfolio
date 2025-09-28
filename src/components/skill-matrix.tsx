@@ -4,11 +4,13 @@ import { skills } from "@/data/experience";
 import { motion } from "framer-motion";
 
 const skillGroups = [
+
   { title: "Frontend", key: "frontend" as const },
   { title: "Backend", key: "backend" as const },
   { title: "Databases", key: "databases" as const },
   { title: "DevOps & Process", key: "devops" as const },
   { title: "Specialties & AI Tools", key: "specialties" as const }
+
 ];
 
 export function SkillMatrix() {
@@ -16,10 +18,12 @@ export function SkillMatrix() {
     <section className="container-grid py-24">
       <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
         <div className="space-y-4">
+
           <h2 className="text-3xl font-semibold">Skills snapshot</h2>
           <p className="text-white/70">
             A balanced toolkit spanning modern frontend frameworks, backend services, databases, DevOps practices, and
             AI-assisted productivity.
+
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2">

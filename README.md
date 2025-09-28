@@ -1,8 +1,10 @@
 # Portfolio (Next.js)
 
+
 Personal portfolio site for Michael Doroshenko, Full Stack Web Developer. Built with Next.js 14, the App Router, TypeScript, Tailwind CSS, and Framer Motion animations.
 
 ## Scripts
+
 
 ```bash
 npm install
@@ -25,3 +27,4 @@ POST requests to `/api/contact` are validated and can be connected to an email s
 ## Résumé
 
 The `/resume` section is optimized for printing/exporting to PDF using the browser print dialog.
+

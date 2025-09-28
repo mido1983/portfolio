@@ -22,14 +22,18 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
+
     locale: "en_US",
+
     type: "website"
   }
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
+
     <html lang="en" className={poppins.variable}>
+
       <body>
         <div className="flex min-h-screen flex-col bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
           {children}

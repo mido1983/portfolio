@@ -13,6 +13,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+
     slug: "codere-landing-engine",
     title: "Codere Landing Automation Engine",
     summary:
@@ -55,6 +56,7 @@ export const projects: Project[] = [
     links: {},
     content:
       "Delivered pixel-perfect storefronts with bespoke themes, automated product feeds, and third-party service integrations. Embedded SEO best practices, responsive layouts, and performance optimizations that lifted organic traffic and conversion rates."
+
   }
 ];
 

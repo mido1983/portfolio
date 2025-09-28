@@ -28,15 +28,19 @@ export function ContactForm() {
     <section id="contact" className="container-grid py-24">
       <div className="grid gap-12 lg:grid-cols-2">
         <div className="space-y-4">
+
           <h2 className="text-3xl font-semibold">Let's build something great</h2>
           <p className="text-white/70">
             Share a project idea, partnership opportunity, or consultation request and I will respond within one business day.
+
           </p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-8">
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="space-y-1 text-sm">
+
               <span>Name</span>
+
               <input
                 required
                 name="name"
@@ -54,7 +58,9 @@ export function ContactForm() {
             </label>
           </div>
           <label className="space-y-1 text-sm">
+
             <span>Message</span>
+
             <textarea
               required
               name="message"
@@ -67,6 +73,7 @@ export function ContactForm() {
             disabled={status === "loading"}
             className="w-full rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-900 disabled:opacity-60"
           >
+
             {status === "loading" ? "Sending..." : "Send message"}
           </button>
           {status === "success" ? (
@@ -74,6 +81,7 @@ export function ContactForm() {
           ) : null}
           {status === "error" ? (
             <p className="text-sm text-red-400">Something went wrong. Please try again later.</p>
+
           ) : null}
         </form>
       </div>

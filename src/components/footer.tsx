@@ -2,6 +2,7 @@ import { siteConfig } from "@/data/site";
 import { format } from "date-fns";
 
 export function Footer() {
+
   const socialLinks = [
     siteConfig.socials.linkedin
       ? { label: "LinkedIn", href: siteConfig.socials.linkedin }
@@ -18,6 +19,7 @@ export function Footer() {
               {link.label}
             </a>
           ))}
+
         </div>
       </div>
     </footer>
