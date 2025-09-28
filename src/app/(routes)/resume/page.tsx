@@ -38,7 +38,7 @@ export default function ResumePage() {
     <div className="container-grid py-24 print:py-12">
       <header className="space-y-6">
 
-        <p className="text-sm uppercase tracking-[0.25em] text-accent">Résumé</p>
+        <p className="text-sm uppercase tracking-[0.25em] text-accent">R??sum??</p>
         <h1 className="text-4xl font-semibold">Michael Doroshenko</h1>
         <p className="max-w-2xl text-white/70">
           Full stack web developer with 7+ years of experience delivering practical web solutions for business and
@@ -69,7 +69,7 @@ export default function ResumePage() {
                   <p className="mt-3 text-sm text-white/70">{item.description}</p>
                   <ul className="mt-4 space-y-2 text-sm text-white/80">
                     {item.achievements.map((achievement) => (
-                      <li key={achievement}>• {achievement}</li>
+                      <li key={achievement}>??? {achievement}</li>
                     ))}
                   </ul>
                 </div>
@@ -117,7 +117,7 @@ export default function ResumePage() {
               </div>
               <div>
                 <p className="font-semibold text-white">Specialties & AI Tools</p>
-                <p>{skills.specialties.join(", ")}</p>
+                <p>{[...skills.specialties, ...skills.aiTools].join(", ")}</p>
 
               </div>
             </div>
