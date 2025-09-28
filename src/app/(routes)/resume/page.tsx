@@ -93,7 +93,7 @@ export default function ResumePage() {
               ))}
             </div>
           </div>
-        </div>
+        
         <aside className="space-y-8">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 print:border-none print:bg-transparent">
 
@@ -146,5 +146,6 @@ export default function ResumePage() {
         </aside>
       </section>
     </div>
+    
   );
 }

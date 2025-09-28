@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 import { PropsWithChildren } from "react";
 import { Poppins } from "next/font/google";
+import { AnimatedBackground } from "@/components/animated-background";
 import { siteConfig } from "@/data/site";
 
 const poppins = Poppins({
@@ -22,21 +23,20 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
-
     locale: "en_US",
-
     type: "website"
   }
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-
     <html lang="en" className={poppins.variable}>
-
-      <body>
-        <div className="flex min-h-screen flex-col bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-          {children}
+      <body className="bg-slate-950">
+        <div className="relative flex min-h-screen flex-col overflow-hidden">
+          <AnimatedBackground />
+          <div className="relative flex flex-1 flex-col">
+            {children}
+          </div>
         </div>
       </body>
     </html>
