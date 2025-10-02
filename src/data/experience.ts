@@ -12,7 +12,7 @@ export const experiences: Experience[] = [
 
     company: "Codere",
     role: "Senior Full Stack Developer",
-    period: "Mar 2022 – Present",
+    period: "Mar 2022 - Present",
     description:
       "Leading full stack development for marketing automation tools and performance-focused web platforms in a high-paced gaming environment.",
     achievements: [
@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
   {
     company: "Primis",
     role: "Web Developer",
-    period: "Jan 2021 – Mar 2022",
+    period: "Jan 2021 - Mar 2022",
     description:
       "Maintained and extended advertising technology platforms, focusing on stability, user experience, and measurable business impact.",
     achievements: [
@@ -39,7 +39,7 @@ export const experiences: Experience[] = [
   {
     company: "Init",
     role: "Full Stack Developer",
-    period: "Dec 2019 – Dec 2020",
+    period: "Dec 2019 - Dec 2020",
     description:
       "Built custom WordPress and WooCommerce solutions from scratch for e-commerce and marketing clients.",
     achievements: [
@@ -52,7 +52,7 @@ export const experiences: Experience[] = [
   {
     company: "Global on Media",
     role: "Full Stack Developer",
-    period: "Nov 2017 – Dec 2019",
+    period: "Nov 2017 - Dec 2019",
     description:
       "Delivered full stack marketing platforms with a focus on responsive user interfaces, data visibility, and lead management.",
     achievements: [
@@ -87,15 +87,14 @@ export const skills = {
     "Python"
   ],
   databases: ["MySQL", "PostgreSQL", "MongoDB", "MS SQL"],
+  aiTools: ["GitHub Copilot", "ChatGPT", "Workflow automation"],
   devops: ["Git/GitHub", "Docker", "CI/CD (GitLab, Jenkins)", "Jira", "Agile/Scrum"],
   specialties: [
     "WordPress & WooCommerce",
     "SEO optimization",
     "Responsive design",
-    "Performance tuning",
-    "GitHub Copilot",
-    "ChatGPT",
-    "Workflow automation"
+    "Performance tuning"
   ]
 
 };
+
