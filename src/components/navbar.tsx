@@ -1,14 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import type { Route } from "next";
 import { siteConfig } from "@/data/site";
 import { motion } from "framer-motion";
 
-const navLinks = [
+type NavLink =
+  | { href: Route; label: string }
+  | { href: `#${string}`; label: string; isAnchor: true };
+
+const navLinks: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
   { href: "/resume", label: "Resume" },
-  { href: "#contact", label: "Contact" }
+  { href: "#contact", label: "Contact", isAnchor: true }
 ];
 
 export function Navbar() {
@@ -21,9 +26,15 @@ export function Navbar() {
         <nav className="hidden gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
             <motion.div key={link.href} whileHover={{ y: -2 }} className="relative">
-              <Link href={link.href} className="transition-colors">
-                {link.label}
-              </Link>
+              {"isAnchor" in link ? (
+                <a href={link.href} className="transition-colors">
+                  {link.label}
+                </a>
+              ) : (
+                <Link href={link.href} className="transition-colors">
+                  {link.label}
+                </Link>
+              )}
             </motion.div>
           ))}
         </nav>
