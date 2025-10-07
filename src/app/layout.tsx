@@ -25,6 +25,18 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     locale: "en_US",
     type: "website"
+  },
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      noarchive: true,
+      nosnippet: true
+    }
   }
 };
 
