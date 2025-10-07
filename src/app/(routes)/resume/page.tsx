@@ -39,9 +39,7 @@ export default function ResumePage() {
           <p className="text-sm uppercase tracking-[0.25em] text-accent">Resume</p>
           <h1 className="text-4xl font-semibold">Michael Doroshenko</h1>
           <p className="max-w-2xl text-white/70">
-            Full stack web developer with 7+ years of experience delivering practical web solutions for business and
-            e-commerce. Skilled in React, Next.js, Node.js, PHP, WordPress, and modern databases, with a passion for
-            performance, scalable systems, and automation.
+Michael Doroshenko is a experienced Full Stack Web Developer with a strong background in building scalable web applications and e commerce solutions. Over 7 years of expertise in PHP, JavaScript, React, Python, Next.js, OOP, Node.js and WordPress. Specialized in integrating RESTful APIs, improving system performance, and delivering enhanced user experiences. Skilled at working in Agile teams, aligning technical solutions with business needs, and continuously learning emerging technologies. The Business Management course completed at Tel Aviv University to strengthen understanding of how to align technical projects with market demands and strategic goals.
           </p>
           
           <ResumeActions />
