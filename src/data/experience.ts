@@ -8,11 +8,50 @@ export type Experience = {
 };
 
 export const experiences: Experience[] = [
+{
+  company: "Freelance",
+  role: "Full Stack Developer & Consultant",
+  period: "Jan 2014 - Present",
+  description:
+    "Delivering end-to-end web & e-commerce solutions from zero to production for startups and SMBs — from discovery and UX to development, launch, and ops — aligning tech with measurable business outcomes.",
+  achievements: [
+    "Built greenfield e-commerce stacks from scratch (WordPress/WooCommerce, OpenCart, PrestaShop) incl. multilingual, multi-currency, taxes/shipping, and custom themes/plugins/modules.",
+    "Launched 15+ custom platforms (e-commerce, booking, internal tools) with clear GTM focus and lean MVP scope.",
+    "Integrated payments and compliance: Stripe/PayPal, 3-D Secure, invoicing/VAT, order flows, refunds, and anti-fraud checks.",
+    "Connected ops: inventory/fulfillment and ERP/CRM integrations (REST/GraphQL), webhooks, email/SMS notifications.",
+    "Improved performance & SEO: Core Web Vitals, schema.org/JSON-LD, WP Recipe Maker integration, image/CDN optimization.",
+    "Set up CI/CD (GitHub Actions) and monitoring (Sentry/Uptime) with containerized deploys and staged releases.",
+    "Ran technical strategy workshops to validate MVP scope, prioritize features, and de-risk delivery."
+  ],
+  tech: [
+    "Next.js",
+    "React",
+    "Node.js",
+    "TypeScript",
+    "PHP",
+    "Slim PHP",
+    "WordPress",
+    "WooCommerce",
+    "OpenCart",
+    "PrestaShop",
+    "PostgreSQL",
+    "MySQL",
+    "Docker",
+    "Nginx",
+    "AWS",
+    "Vercel",
+    "Cloudflare",
+    "REST",
+    "GraphQL",
+    "GitHub Actions",
+    "Sentry"
+  ]
+},
   {
 
     company: "Codere",
     role: "Senior Full Stack Developer",
-    period: "Mar 2022 - Present",
+    period: "Mar 2022 - Sep 2025",
     description:
       "Leading full stack development for marketing automation tools and performance-focused web platforms in a high-paced gaming environment.",
     achievements: [
@@ -21,7 +60,7 @@ export const experiences: Experience[] = [
       "Used AI tools such as GitHub Copilot and ChatGPT to accelerate delivery, documentation, and code quality reviews.",
       "Optimized database queries and application performance, cutting response times by 25%."
     ],
-    tech: ["React", "Next.js", "Node.js", "MySQL", "AI tooling"]
+    tech: ["React", "Next.js", "Node.js", "MySQL", "PHP","AWS", "AI tooling"]
   },
   {
     company: "Primis",
@@ -47,7 +86,7 @@ export const experiences: Experience[] = [
       "Integrated third-party REST APIs to automate inventory, fulfillment, and marketing flows.",
       "Improved SEO foundations and responsive design across new product launches."
     ],
-    tech: ["WordPress", "WooCommerce", "PHP", "JavaScript", "REST APIs"]
+    tech: ["WordPress", "WooCommerce", "PHP", "JavaScript","MySQL", "REST APIs"]
   },
   {
     company: "Global on Media",

@@ -23,7 +23,7 @@ export function ExperienceTimeline() {
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/20">
               <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-white/60">
                 <span>{item.period}</span>
-                <span>{item.tech.slice(0, 3).join(" · ")}</span>
+                <span>{item.tech.slice(0, 30).join(" · ")}</span>
               </div>
               <h3 className="mt-4 text-xl font-semibold">
                 {item.role} · {item.company}
