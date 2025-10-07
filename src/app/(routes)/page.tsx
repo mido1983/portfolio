@@ -8,12 +8,13 @@ import AboutYou from "@/components/about-you";
 export default function HomePage() {
   return (
     <>
-      <ContactForm />
+    
       <HeroSection />
       <AboutYou />
       <ProjectGrid />
       <SkillMatrix />
       <ExperienceTimeline />
+      <ContactForm />
     </>
   );
 }
