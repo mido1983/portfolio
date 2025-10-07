@@ -8,8 +8,8 @@ export const siteConfig = {
   phone: "+972-50-4471533",
   location: "Haifa / Tel Aviv, Israel",
   socials: {
-    linkedin: "https://linkedin.com/in/michael-doroshenko"
-
+    linkedin: "https://linkedin.com/in/michael-doroshenko",
+    github: "https://github.com/mido1983"
   }
 };
 
