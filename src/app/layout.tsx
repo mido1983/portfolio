@@ -44,7 +44,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className={poppins.variable}>
       <body className="bg-slate-950">
-        <div className="relative flex min-h-screen flex-col overflow-hidden">
+        <div className="relative flex min-h-screen flex-col overflow-x-hidden">
           <AnimatedBackground />
           <div className="relative flex flex-1 flex-col">
             {children}
