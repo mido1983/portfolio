@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Route } from "next";
 import { siteConfig } from "@/data/site";
 import { motion } from "framer-motion";
+import { CallMeBtn } from "./call-me-btn";
 
 type NavLink =
   | { href: Route; label: string }
@@ -18,7 +19,7 @@ const navLinks: NavLink[] = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur">
+    <header className="sticky top-0 z-50 backdrop-blur ">
       <div className="container-grid flex items-center justify-between py-6">
         <Link href="/" className="text-lg font-semibold tracking-tight">
           {siteConfig.name}
@@ -47,6 +48,7 @@ export function Navbar() {
           <span>Email me</span>
           <span aria-hidden="true" className="text-base leading-none">&gt;</span>
         </motion.a>
+        <CallMeBtn/>
       </div>
     </header>
   );

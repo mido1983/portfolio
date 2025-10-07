@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
+import { CallMeBtn } from "./call-me-btn";
 
 const highlights = ["React", "Next.js", "Node.js", "PHP", "WordPress", "AI tools"];
 
@@ -33,18 +34,13 @@ export function HeroSection() {
             transition={{ delay: 0.3 }}
             className="text-lg text-white/70"
           >
-            Michael Doroshenko is a experienced Full Stack Web Developer with a strong 
-background in building scalable web applications and e
-commerce solutions. Over 7 years of expertise in PHP, 
-JavaScript, React, Python, Next.js, OOP, Node.js and 
-WordPress. Specialized in integrating RESTful APIs, 
-improving system performance, and delivering enhanced user 
-experiences. Skilled at working in Agile teams, aligning 
-technical solutions with business needs, and continuously 
-learning emerging technologies. The Business Management 
-course completed at Tel Aviv University to strengthen 
-understanding of how to align technical projects with market 
-demands and strategic goals. 
+            I’m an experienced Full Stack Web Developer with over 7 years in building high-performance web applications and e-commerce systems.
+            My core stack includes PHP, JavaScript, React, Python, Next.js, Node.js, OOP, and WordPress, plus a wide toolkit for automation, CI/CD, databases, and cloud infrastructure.
+
+            I specialize in RESTful API integration, system optimization, and delivering seamless user experiences across platforms.
+            Strong at working within Agile teams, translating business needs into efficient technical solutions, and constantly exploring new technologies.
+
+            I also completed a Business Management course at Tel Aviv University, strengthening my ability to connect engineering strategy with market goals and product vision.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -54,24 +50,54 @@ demands and strategic goals.
           >
             <Link
               href="#projects"
-              className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-900 shadow-lg shadow-cyan-500/30"
+              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500
+             px-6 py-2.5 text-sm font-semibold text-slate-900 shadow-md shadow-cyan-500/40
+             transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-cyan-400/50
+             focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-300"
             >
-              View projects
+              <span className="transition-transform group-hover:translate-x-0.5">View projects</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-4 h-4 transition-transform group-hover:translate-x-1"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </Link>
-            <a
+
+            {/* <a
               href="/resume.pdf"
               download="Michael-Doroshenko-Resume.pdf"
               className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold"
             >
               Download Resume
-            </a>
+            </a> */}
             <a
               href={`mailto:${siteConfig.email}`}
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 px-5 py-2 text-sm font-semibold text-slate-900 shadow-lg shadow-cyan-500/40 transition-transform hover:-translate-y-0.5 hover:shadow-cyan-400/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 
+             px-6 py-2.5 text-sm font-semibold text-slate-900 shadow-md shadow-cyan-500/40 
+             transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-cyan-400/50 
+             focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-300"
             >
               <span>Contact me</span>
-              <span aria-hidden="true" className="text-base leading-none">&gt;</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-4 h-4 transition-transform group-hover:translate-x-0.5"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </a>
+
+<CallMeBtn/>
+
+
           </motion.div>
         </div>
         <motion.div

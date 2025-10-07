@@ -26,6 +26,13 @@ export function ResumeActions() {
         Discuss opportunities
 
       </a>
+      <a
+  href={`tel:${siteConfig.phone}`}
+  className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-slate-900"
+>
+  Call me
+</a>
+
     </div>
   );
 }
