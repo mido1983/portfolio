@@ -33,8 +33,18 @@ export function HeroSection() {
             transition={{ delay: 0.3 }}
             className="text-lg text-white/70"
           >
-            Michael Doroshenko is a full stack developer with 7+ years of experience across React, Next.js, Node.js, PHP,
-            and WordPress, delivering secure, performant solutions for e-commerce and marketing teams.
+            Michael Doroshenko is a experienced Full Stack Web Developer with a strong 
+background in building scalable web applications and e
+commerce solutions. Over 7 years of expertise in PHP, 
+JavaScript, React, Python, Next.js, OOP, Node.js and 
+WordPress. Specialized in integrating RESTful APIs, 
+improving system performance, and delivering enhanced user 
+experiences. Skilled at working in Agile teams, aligning 
+technical solutions with business needs, and continuously 
+learning emerging technologies. The Business Management 
+course completed at Tel Aviv University to strengthen 
+understanding of how to align technical projects with market 
+demands and strategic goals. 
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -48,8 +58,12 @@ export function HeroSection() {
             >
               View projects
             </Link>
-            <a href="/resume" className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold">
-              Resume
+            <a
+              href="/resume.pdf"
+              download="Michael-Doroshenko-Resume.pdf"
+              className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold"
+            >
+              Download Resume
             </a>
             <a
               href={`mailto:${siteConfig.email}`}

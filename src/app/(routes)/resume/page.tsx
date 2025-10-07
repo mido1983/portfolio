@@ -69,6 +69,9 @@ export default function ResumePage() {
                         <li key={achievement}>- {achievement}</li>
                       ))}
                     </ul>
+                    <p className="mt-4 text-xs uppercase tracking-wide text-white/50">
+                      Tech: <span className="text-white/70">{item.tech.join(", ")}</span>
+                    </p>
                   </div>
                 ))}
               </div>
