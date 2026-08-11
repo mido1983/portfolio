@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "privacy:check": "node scripts/check-public-identity.mjs",
+    "prebuild": "npm run privacy:check",
+    "check": "npm run privacy:check && npm run lint && npm run build"
   },
   "dependencies": {
     "date-fns": "3.6.0",
