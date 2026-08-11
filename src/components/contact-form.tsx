@@ -20,11 +20,6 @@ const contactItems: ContactItem[] = [
     ? [{ label: "Phone", value: siteConfig.phone, href: `tel:${phoneHref}` }]
     : []),
   {
-    label: "LinkedIn",
-    value: siteConfig.socials.linkedin,
-    href: siteConfig.socials.linkedin
-  },
-  {
     label: "GitHub",
     value: siteConfig.socials.github,
     href: siteConfig.socials.github
