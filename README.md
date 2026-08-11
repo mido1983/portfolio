@@ -1,7 +1,7 @@
 # Portfolio (Next.js)
 
 
-Personal portfolio site for Michael Doroshenko, Full Stack Web Developer. Built with Next.js 14, the App Router, TypeScript, Tailwind CSS, and Framer Motion animations.
+Personal portfolio site for MiDo, Full Stack Web Developer. Built with Next.js 14, the App Router, TypeScript, Tailwind CSS, and Framer Motion animations.
 
 ## Scripts
 

@@ -37,7 +37,7 @@ export default function ResumePage() {
       <div className="container-grid py-24 print:py-12">
         <header className="space-y-6">
           <p className="text-sm uppercase tracking-[0.25em] text-accent">Resume</p>
-          <h1 className="text-4xl font-semibold">Michael Doroshenko</h1>
+          <h1 className="text-4xl font-semibold">MiDo</h1>
           <p className="max-w-2xl text-white/70">
 Experienced Full Stack Web Developer with a strong background in building scalable web applications and e commerce solutions. Over 7 years of expertise in PHP, JavaScript, React, Python, Next.js, OOP, Node.js and WordPress. Specialized in integrating RESTful APIs, improving system performance, and delivering enhanced user experiences. Skilled at working in Agile teams, aligning technical solutions with business needs, and continuously learning emerging technologies. The Business Management course completed at Tel Aviv University to strengthen understanding of how to align technical projects with market demands and strategic goals.
           </p>
@@ -124,9 +124,6 @@ Experienced Full Stack Web Developer with a strong background in building scalab
               <p className="mt-3">Email: {siteConfig.email}</p>
               <p>Phone: {siteConfig.phone}</p>
               <p>Location: {siteConfig.location}</p>
-              <p>
-                LinkedIn: <a href={siteConfig.socials.linkedin}>{siteConfig.socials.linkedin}</a>
-              </p>
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70 print:border-none print:bg-transparent">
               <h3 className="text-lg font-semibold text-white">Languages</h3>

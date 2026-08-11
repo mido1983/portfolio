@@ -10,7 +10,7 @@ const resumeStreamLines = [
   "BT",
   "/F1 20 Tf",
   "72 780 Td",
-  "(Michael Doroshenko - Full Stack Web Developer) Tj",
+  "(MiDo - Full Stack Web Developer) Tj",
   "0 -26 Td",
   "(Email: m0504471533@gmail.com) Tj",
   "0 -26 Td",
@@ -22,7 +22,7 @@ const resumeStreamLines = [
   "0 -26 Td",
   "(Experience: Codere, Primis, Init, Global on Media) Tj",
   "0 -26 Td",
-  "(For full details visit michael-doroshenko portfolio site.) Tj",
+  "(For full details visit resume.5solo.com.) Tj",
   "ET"
 ];
 

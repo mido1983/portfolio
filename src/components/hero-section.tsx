@@ -69,11 +69,10 @@ export function HeroSection() {
             </Link>
 
             {/* <a
-              href="/resume.pdf"
-              download="Michael-Doroshenko-Resume.pdf"
+              href="/resume"
               className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold"
             >
-              Download Resume
+              View Resume
             </a> */}
             <a
               href={`mailto:${siteConfig.email}`}
