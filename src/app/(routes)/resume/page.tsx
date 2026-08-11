@@ -124,9 +124,6 @@ Experienced Full Stack Web Developer with a strong background in building scalab
               <p className="mt-3">Email: {siteConfig.email}</p>
               <p>Phone: {siteConfig.phone}</p>
               <p>Location: {siteConfig.location}</p>
-              <p>
-                LinkedIn: <a href={siteConfig.socials.linkedin}>{siteConfig.socials.linkedin}</a>
-              </p>
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70 print:border-none print:bg-transparent">
               <h3 className="text-lg font-semibold text-white">Languages</h3>
