@@ -11,7 +11,15 @@ const forbidden = [
 ];
 
 async function* files(directory) {
-  for (const entry of await readdir(directory, { withFileTypes: true })) {
+  let entries;
+  try {
+    entries = await readdir(directory, { withFileTypes: true });
+  } catch (error) {
+    if (error?.code === "ENOENT") return;
+    throw error;
+  }
+
+  for (const entry of entries) {
     const filePath = path.join(directory, entry.name);
     if (entry.isDirectory()) yield* files(filePath);
     else if (extensions.has(path.extname(entry.name))) yield filePath;
