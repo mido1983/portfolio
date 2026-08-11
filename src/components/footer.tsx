@@ -4,10 +4,8 @@ import { format } from "date-fns";
 export function Footer() {
 
   const socialLinks = [
-    siteConfig.socials.linkedin
-      ? { label: "LinkedIn", href: siteConfig.socials.linkedin }
-      : null
-  ].filter(Boolean) as { label: string; href: string }[];
+    { label: "GitHub", href: siteConfig.socials.github }
+  ];
 
   return (
     <footer className="border-t border-white/10 py-10">
